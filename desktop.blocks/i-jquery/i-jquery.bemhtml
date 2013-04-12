@@ -1,0 +1,9 @@
+block trololo, tag: 'bla'
+
+block i-jquery, default: applyCtx({
+    block: 'b-page',
+    elem: 'js',
+    url: this.ctx.url || '//yandex.st/jquery/' + this.ctx.version + '/jquery.min.js'
+})
+
+block kuku, tag: 'opapa'
