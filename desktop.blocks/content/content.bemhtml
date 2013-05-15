@@ -1,0 +1,10 @@
+block content {
+    this._mode === 'cntnt': {
+        return 'my content'
+    }
+
+    default: applyCtx({
+        block: 'bla',
+        content: apply('cntnt')
+    })
+}
