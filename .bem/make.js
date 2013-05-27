@@ -59,7 +59,9 @@ MAKE.decl('BundleNode', {
             'bemjson.js',
             'bemdecl.js',
             'deps.js',
+            'i18n',
             'bemhtml',
+            'i18n.js+bemhtml',
             'js',
             'css',
             'ie.css',
@@ -84,6 +86,18 @@ MAKE.decl('BundleNode', {
 
         return this.__base(tech);
 
+    },
+
+    'create-i18n.js-optimizer-node': function() {
+        return this['create-js-optimizer-node'].apply(this, arguments);
+    },
+
+    'create-i18n.js+bemhtml-optimizer-node': function(tech, sourceNode, bundleNode) {
+        return this['create-js-optimizer-node'].apply(this, arguments);
+    },
+
+    'create-i18n.html-node': function() {
+        return this['create-html-node'].apply(this, arguments);
     }
 
 });
