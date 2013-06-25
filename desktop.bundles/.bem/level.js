@@ -8,13 +8,13 @@ exports.getConfig = function() {
         bundleBuildLevels: this.resolvePaths([
             '../../bem-bl/blocks-common',
             '../../bem-bl/blocks-desktop',
+            '../../lego/blocks-common',
+            '../../lego/blocks-desktop',
             '../../bemhtml/common.blocks',
             '../../bem-controls/common.blocks',
             '../../bem-controls/desktop.blocks',
-            '../../islands-controls/common.blocks',
-            '../../islands-controls/desktop.blocks',
-            '../../islands-popups/common.blocks',
-            '../../islands-popups/desktop.blocks',
+            '../../islands-components/common.blocks',
+            '../../islands-components/desktop.blocks',
             '../../common.blocks',
             '../../desktop.blocks'
         ])

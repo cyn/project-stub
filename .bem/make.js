@@ -22,18 +22,23 @@ MAKE.decl('Arch', {
                 type     : 'git',
                 url      : 'git://github.com/bem/bem-controls.git',
                 npmPackages : false,
-                treeish: 'dev'
+                treeish: 'v1.0.0'
             },
-            'islands-controls' : {
+            'islands-components' : {
                 type     : 'git',
-                url      : 'git://github.yandex-team.ru/lego/islands-controls.git',
+                url      : 'git://github.yandex-team.ru/lego/islands-components.git',
                 npmPackages : false,
-                treeish: 'dev'
+                treeish: 'v1.0.0'
             },
-            'islands-popups' : {
+            'lego' : {
                 type     : 'git',
-                url      : 'git://github.yandex-team.ru/lego/islands-popups.git',
-                npmPackages : false
+                url      : 'git://github.yandex-team.ru/lego/romochka.git',
+                npmPackages: [ 'tools/package.json' ],
+                paths: [
+                    'blocks-common',
+                    'blocks-desktop',
+                    'tools'
+                ]
             }
         };
 

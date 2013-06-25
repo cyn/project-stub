@@ -10,24 +10,45 @@
     ],
     content:[
         {
-            block: 'header',
+            block: 'b-examples',
             content: [
-                'header content goes here'
+                {
+                    block: 'b-example',
+                    title: 'Первый пример',
+                    content: [
+{
+    block: 'example',
+    js: true,
+    content: [
+        {
+            elem: 'link-wrapper',
+            content: {
+                elem: 'link',
+                content: 'Ссылка'
+            }
+        }
+    ]
+}
+                    ]
+                },
+                {
+                    block: 'b-example',
+                    mods: { position: '02' },
+                    title: 'Работа с элементами',
+                    content: [
+                        {
+                            block: 'e-bind',
+                            content: 'Примерчичик с DOM-ом'
+                        }
+                    ]
+                }
             ]
         },
         {
-            block: 'content',
-            content: [
-                'main content'
-            ]
+            block: 'i-jquery',
+            url: '/desktop.blocks/i-jquery/jquery.js',
+            mods: { version: '1.8.3' }
         },
-        {
-            block: 'footer',
-            content: [
-                'footer content goes here'
-            ]
-        },
-        { block: 'i-jquery', mods: { version: '1.8.3' } },
         { elem: 'js', url: '_index.js' }
     ]
 })
